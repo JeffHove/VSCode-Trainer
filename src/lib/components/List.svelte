@@ -5,9 +5,9 @@
 </script>
 
 <div>
-  {#each taskLists as taskList}
+  {#each taskLists as taskList (taskList)}
     <input bind:group={selectedTaskList.v} class="pointer-events-none fixed opacity-0" id={taskList} name="algorithm" type="radio" value={taskList} />
-    <label class="cursor-pointer bg-secondary-color px-2 py-1 transition-colors hover:bg-white hover:text-primary-color" for={taskList}>{taskList}</label>
+    <label class="bg-secondary-color cursor-pointer px-2 py-1 transition-colors hover:text-primary hover:bg-white" for={taskList}>{taskList}</label>
   {/each}
 </div>
 

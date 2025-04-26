@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { os } from "$lib/refs.svelte";
+  import { os } from "$lib/refs.svelte";
   import { shortcuts } from "$lib/shortcuts";
 
   const search2DArray = (array: string[][], target: string): null | number => {

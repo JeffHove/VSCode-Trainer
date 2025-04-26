@@ -10,7 +10,7 @@
     <List />
     <div>
       <label for="os">OS:</label>
-      <select id="os" class="px-1 text-center text-black" bind:value={os.v}>
+      <select id="os" class="text-primary bg-white px-1 text-center" bind:value={os.v}>
         <option value="Windows">Windows</option>
         <option value="macOS">macOS</option>
         <option value="Linux">Linux</option>

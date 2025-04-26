@@ -9,9 +9,13 @@ import ts from "typescript-eslint";
 /** @type {import('eslint').Linter.Config[]} */
 export default [
   // Formatting
-  stylistic.configs["recommended-flat"],
   perfectionist.configs["recommended-alphabetical"],
-  { plugins: { "readable-tailwind": tailwind } },
+  {
+    plugins: {
+      "@stylistic": stylistic,
+      "readable-tailwind": tailwind
+    }
+  },
 
   // Linting
   js.configs.recommended,
